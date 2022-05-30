@@ -5,6 +5,8 @@ using UnityEngine;
 public class Key : MonoBehaviour
 {
     public GameObject door;
+    public GameObject door2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class Key : MonoBehaviour
         if (other.tag == "Player")
         {
             Destroy(door);
+            Destroy(door2);
         }
 
     }
